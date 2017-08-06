@@ -1,0 +1,13 @@
+CREATE DATABASE
+  IF NOT EXISTS myusers;USE
+    DROP TABLE
+    DROP TABLE IF EXISTS `myusers`.`users`;CREATE TABLE `myusers`.`users`
+                 (
+                              `id`  numeric,
+                              `firstname` VARCHAR(45) NOT NULL,
+                              `lastname`  VARCHAR(45) NULL,
+                              `email`     VARCHAR(45) NULL,
+                              `URI`   VARCHAR(45) NULL,
+                              `status`     INT NULL,
+                              PRIMARY KEY (`id`)
+                 )
